@@ -23,6 +23,6 @@ RUN set -eux &&\
 ENV LANG en_US.utf8
 
 USER build
-WORKDIR /build
+WORKDIR /src
 
 CMD [ "/bin/bash" ]
