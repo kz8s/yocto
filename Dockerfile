@@ -11,10 +11,10 @@ RUN set -eux &&\
         gawk gcc-multilib git git-core libc6-dev-i386 libncurses5-dev locales lzop man python python3 \
         python3-pexpect python3-pip quilt screen socat sudo texinfo unzip vim wget xz-utils &&\
     rm -rf /var/lib/apt-lists/* &&\
-	echo "dash dash/sh boolean false" | debconf-set-selections &&\
-	dpkg-reconfigure dash &&\
+    echo "dash dash/sh boolean false" | debconf-set-selections &&\
+    dpkg-reconfigure dash &&\
     useradd -ms /bin/bash -p build build && \
-	usermod -aG sudo build &&\
+    usermod -aG sudo build &&\
     echo "build ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers &&\
     echo "en_US.UTF-8 UTF-8" > /etc/locale.gen && locale-gen &&\
     curl http://storage.googleapis.com/git-repo-downloads/repo > /usr/local/bin/repo &&\
