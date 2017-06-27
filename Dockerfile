@@ -12,7 +12,7 @@ RUN set -eux &&\
         python3-pexpect python3-pip quilt screen socat sudo texinfo unzip vim wget xz-utils \
         uuid-dev libcairo2-dev fontconfig libpango1.0-dev libjpeg62-turbo-dev \
         libgles2-mesa-dev libgles1-mesa-dev libgbm-dev libfreetype6-dev liblua5.1-0-dev \
-        libsqlite3-dev python3-dev libprotobuf-c-dev protobuf-compiler clang &&\
+        libsqlite3-dev python3-dev clang cmake && \
     rm -rf /var/lib/apt-lists/* &&\
     echo "dash dash/sh boolean false" | debconf-set-selections &&\
     dpkg-reconfigure dash &&\
