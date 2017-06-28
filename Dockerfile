@@ -1,4 +1,5 @@
-FROM debian:stretch
+F
+OM debian:stretch
 MAINTAINER jono <jono@bowerswilkins.com>
 
 ARG DEBIAN_FRONTEND=noninteractive
@@ -11,7 +12,7 @@ RUN set -eux &&\
         gawk gcc-multilib git git-core libc6-dev-i386 libncurses5-dev locales lzop man python python3 \
         python3-pexpect python3-pip quilt screen socat sudo texinfo unzip vim wget xz-utils \
         uuid-dev libcairo2-dev fontconfig libpango1.0-dev libjpeg62-turbo-dev \
-        libgles2-mesa-dev libgles1-mesa-dev libgbm-dev libfreetype6-dev liblua5.1-0-dev \
+        libgles2-mesa-dev libgles1-mesa-dev libgbm-dev libgl1-mesa-dri libfreetype6-dev liblua5.1-0-dev \
         libsqlite3-dev python3-dev clang cmake && \
     rm -rf /var/lib/apt-lists/* &&\
     echo "dash dash/sh boolean false" | debconf-set-selections &&\
