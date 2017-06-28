@@ -1,5 +1,4 @@
-F
-OM debian:stretch
+FROM debian:stretch
 MAINTAINER jono <jono@bowerswilkins.com>
 
 ARG DEBIAN_FRONTEND=noninteractive
