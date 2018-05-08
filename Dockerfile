@@ -9,7 +9,7 @@ RUN set -eux &&\
     apt-get install -yq \
         apt-utils bash bc build-essential chrpath cpio curl debianutils diffstat doxygen \
         gawk gcc-multilib git git-core libc6-dev-i386 libncurses5-dev locales lzop man python python3 \
-        python3-pexpect python3-pip quilt screen socat sudo texinfo unzip vim wget xz-utils \
+        python3-pexpect python3-pip quilt screen silversearcher-ag socat sudo texinfo unzip vim wget xz-utils \
         uuid-dev libcairo2-dev fontconfig libpango1.0-dev libjpeg62-turbo-dev \
         libgles2-mesa-dev libgles1-mesa-dev libgbm-dev libgl1-mesa-dri libfreetype6-dev liblua5.1-0-dev \
         libsqlite3-dev python3-dev clang cmake gdb && \
