@@ -9,7 +9,7 @@ RUN set -eux &&\
     apt-get install -yq \
         apt-utils bash bc build-essential chrpath cpio curl debianutils diffstat doxygen \
         gawk gcc-multilib git git-core libc6-dev-i386 libmsgpack-dev libncurses5-dev locales lzop man python python3 \
-        python3-pexpect python3-pip quilt screen socat sudo texinfo unzip vim wget xz-utils &&\
+        python3-pexpect python3-pip quilt screen silversearcher-ag socat sudo texinfo unzip vim wget xz-utils &&\
     rm -rf /var/lib/apt-lists/* &&\
     echo "dash dash/sh boolean false" | debconf-set-selections &&\
     dpkg-reconfigure dash &&\
